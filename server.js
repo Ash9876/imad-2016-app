@@ -5,6 +5,23 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+
+var content={
+  title:'Article one, me',
+  heading:'article one',
+  date:'sep 5,2016',
+  content:`<p>
+                content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. 
+            </p>
+            <p>
+                content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. 
+            </p>
+            <p>
+                content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. content for my first article. 
+            </p>`
+};
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
