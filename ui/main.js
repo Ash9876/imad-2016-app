@@ -12,7 +12,7 @@ button.onclick=function(){
             }
         }
     };
-    request.open('GET','https://cloud.imad.hasura.io/cloud',true);
+    request.open('GET','https://http://ash9876.imad.hasura-app.io/cloud',true);
     request.send(null);
    
 };
