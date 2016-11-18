@@ -22,7 +22,7 @@ body {
 }
 
 .container{
-    background-image:http://1.bp.blogspot.com/-mC69QJgjsdQ/T7s4LBjdrBI/AAAAAAAADRs/ssP_Km47r_g/s1600/sanderson+coralie.jpg;
+    background-image:url("sanderson+coralie.jpg");
     max-width: 800px;
     margin: 0 auto;
     color: #3d288c;
