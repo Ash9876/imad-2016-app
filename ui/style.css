@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin-top: 60px;
-    background-color:#cacde2;
+    background-image:url("sanderson+coralie.jpg");
 }
 
 .center {
@@ -22,7 +22,6 @@ body {
 }
 
 .container{
-    background-image:url("sanderson+coralie.jpg");
     max-width: 800px;
     margin: 0 auto;
     color: #3d288c;
