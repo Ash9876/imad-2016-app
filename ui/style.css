@@ -3,6 +3,12 @@ body {
     margin-top: 60px;
 }
 
+#name {
+    margin-left:40px;
+    text-align:left;
+    background-color:aquamarine;
+}
+
 .center {
     margin:20px;
     text-align: center;
