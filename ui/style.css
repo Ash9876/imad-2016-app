@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     margin-top: 60px;
-    background-color:#cacde2;
+    background-image:url("http://www.faurecia.com/files/media/site_com_corporate/570x370/nature.jpg");
 }
 
 .center {
@@ -31,5 +31,4 @@ body {
     border-style: solid;
     border-color: #3e9bd6;
     background-color: white;  
-    background-image:url("http://www.faurecia.com/files/media/site_com_corporate/570x370/nature.jpg");
 }
