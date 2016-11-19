@@ -6,6 +6,7 @@ var img=document.getElementById("img");
 function change(){
     if(img.src==img1)
    img.src=img2;
+   img.width="150px";
    else
    img.src=img1;
 }
