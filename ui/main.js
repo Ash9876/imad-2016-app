@@ -8,9 +8,8 @@ var imgFunction=function(){
         
     else
         img=img1;
-    
-    var interval=setInterval(imgFunction,5000);
 };
+ var interval=setInterval(imgFunction,5000);
 
 var button=document.getElementById('counter');
 button.onclick=function(){
