@@ -12,6 +12,10 @@ body {
     background-color: beige;
 }
 
+#img{
+    text-align:left;
+}
+
 .center {
     margin:20px;
     text-align: center;
