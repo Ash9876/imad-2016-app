@@ -11,10 +11,8 @@ body {
     padding: 30px;
     background-color: beige;
     margin-left: 80px;
-}
-
-hr{
-    
+    border-bottom: 3px solid #b6bdc5;
+    border-left: 3px solid #b6bdc5;
 }
 
 #text{
@@ -25,6 +23,7 @@ hr{
     font-family: 'Helvetica';
     padding: 30px;
     margin-left: 80px;
+    border: 3px solid #d0c8e0;
 }
 
 #image{
