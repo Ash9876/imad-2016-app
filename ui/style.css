@@ -12,6 +12,11 @@ body {
     background-color: beige;
 }
 
+#text{
+    text-align:left;
+    max-width:300px;
+}
+
 #image{
     text-align:right;
 }
