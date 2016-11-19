@@ -4,12 +4,7 @@ var img2="https://s-media-cache-ak0.pinimg.com/236x/af/a5/a9/afa5a926dd91ff40eeb
 var img=document.getElementById("img");
 
 img.onclick=function(){
-    if(this.src==img1){
-        this.src=img2;
-    }
-    else{
-        this.src=img1
-    }
+   this.src=img2;
 };
 
 var button=document.getElementById('counter');
