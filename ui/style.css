@@ -13,13 +13,14 @@ body {
 }
 
 #text{
-    text-align:left;
-    max-width:500px;
+    max-width:650px;
     font-size:25px;
+    float:left;
 }
 
-#img{
-    text-align:right;
+#image{
+    float:right;
+    max-width:200px;
 }
 
 .center {
