@@ -13,14 +13,21 @@ body {
 }
 
 #text{
-    max-width:650px;
-    font-size:25px;
-    float:left;
+    max-width: 900px;
+    font-size: 25px;
+    float: left;
+    background-color: beige;
+    font-family: 'Helvetica';
+    height: 200px;
+    padding: 30px;
+    margin-left: 80px;
 }
 
 #image{
-    float:right;
-    max-width:200px;
+    float: right;
+    max-width: 200px;
+    padding: 30px;
+    height: 250px;
 }
 
 .center {
@@ -41,12 +48,6 @@ body {
 }
 
 .container{
-    max-width: 800px;
+    width: 1200px;
     color: #3d288c;
-    text-align: left;
-    font-family: 'Helvetica';
-    background-color: beige;
-    margin-top: 20px;
-    padding: 30px;
-    font-size: larger; 
 }
