@@ -4,9 +4,10 @@ var img2="https://s-media-cache-ak0.pinimg.com/236x/af/a5/a9/afa5a926dd91ff40eeb
 var img=document.getElementById("img");
 
 function change(){
-    if(img.src==img1)
+    if(img.src==img1){
    img.src=img2;
    img.width="150px";
+    }
    else
    img.src=img1;
 }
