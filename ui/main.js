@@ -2,14 +2,15 @@
 var img1="http://i.ebayimg.com/images/g/bj8AAOxyXDhSgmRm/s-l300.jpg"
 var img2="https://s-media-cache-ak0.pinimg.com/236x/af/a5/a9/afa5a926dd91ff40eebfd62249056287.jpg";
 var img=document.getElementById("img");
-var imgFunction=function(){
-    if(img==img1)
-        img=img2;
-        
-    else
-        img=img1;
+
+img.onclick=function(){
+    if(this.src==img1){
+        this.src=img2;
+    }
+    else{
+        this.src=img1
+    }
 };
- var interval=setInterval(imgFunction,5000);
 
 var button=document.getElementById('counter');
 button.onclick=function(){
