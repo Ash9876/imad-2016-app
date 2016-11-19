@@ -3,6 +3,12 @@ body {
     font-family: 'Arial','Helvetica','sans-serif';
 }
 
+.link{
+    color:grey;
+    text-align:left;
+    font-size:20px;
+}
+
 #nam {
     text-align: left;
     font-size: 45px;
