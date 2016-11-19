@@ -9,16 +9,20 @@ body {
     font-size:20px;
 }
 
-#nam {
-    text-align: left;
-    font-size: 45px;
-    color: #146e92;
+
+header {
     width: 1100px;
     padding: 30px;
     background-color: beige;
     margin-left: 80px;
     border-bottom: 3px solid #b6bdc5;
     border-left: 3px solid #b6bdc5;
+}
+
+#nam{
+    text-align: left;
+    font-size: 45px;
+    color: #146e92;
 }
 
 #text{
