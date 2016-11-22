@@ -19,6 +19,10 @@ app.get('/games.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'games.html'));
 });
 
+app.get('/wish.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'wish.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
