@@ -20,7 +20,7 @@ header {
 
 .link{
     color:grey;
-    text-align:right;
+    float:right;
     font-size:20px;
     padding:10px;
     text-decoration:none;
