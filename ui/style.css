@@ -16,7 +16,9 @@ header {
 }
 
 #heading{
-    
+    max-width: 1200px;
+    min-width: 1200px;
+    overflow: hidden;
 }
 
 .link{
