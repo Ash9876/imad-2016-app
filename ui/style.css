@@ -6,6 +6,7 @@ body {
 
 header {
     width: 1100px;
+    height:50px;
     padding: 30px;
     background-color: beige;
     margin-left: 80px;
@@ -14,21 +15,26 @@ header {
 }
 
 #heading{
+    
 }
 
 .link{
     color:grey;
-    float:right;
     font-size:20px;
-    padding:10px;
     text-decoration:none;
 }
 
 
 #nam{
-    text-align: left;
+    float: left;
     font-size: 45px;
     color: #146e92;
+}
+
+nav{
+    float:right;
+    padding-top:30px;
+    padding-bottom:30px;
 }
 
 #text{
