@@ -12,7 +12,6 @@ header {
     background-color: beige;
     margin-left: 80px;
     border-bottom: 3px solid #b6bdc5;
-    border-left: 3px solid #b6bdc5;
 }
 
 #heading{
@@ -39,6 +38,7 @@ nav{
     padding-top:10px;
     padding-bottom:30px;
     font-size: 25px;
+    padding-right:20px;
 }
 
 #text{
