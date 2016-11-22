@@ -22,6 +22,7 @@ header {
     color:grey;
     font-size:20px;
     text-decoration:none;
+    padding:10px;
 }
 
 
@@ -33,7 +34,7 @@ header {
 
 nav{
     float:right;
-    padding-top:30px;
+    padding-top:15px;
     padding-bottom:30px;
 }
 
