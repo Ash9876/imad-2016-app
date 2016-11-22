@@ -32,6 +32,7 @@ header {
     float: left;
     font-size: 45px;
     color: #146e92;
+    max-width:500px;
 }
 
 nav{
