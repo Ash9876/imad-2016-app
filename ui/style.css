@@ -65,6 +65,10 @@ nav{
     height: 250px;
 }
 
+form{
+    color:blue;
+}
+
 #relevant{
     float: right;
     padding: 20px;
