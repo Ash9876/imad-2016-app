@@ -1,5 +1,1 @@
-<html>
-    <body>
-        done
-    </body>
-</html>
+alert('hello');
