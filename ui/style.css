@@ -67,8 +67,12 @@ nav{
 
 .submit{
     color:white;
-    background-color:blue;
-    padding:30px;
+    background-color:#3c6288;
+    padding-left:30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
 }
 
 #relevant{
