@@ -73,7 +73,12 @@ nav{
 }
 
 .input{
-    
+    float: right;
+    height: 30px;
+    background-color: #e6e3e2;
+    border: #d5dfea;
+    margin-left: 10px;
+    text-align: center;
 }
 
 #image{
