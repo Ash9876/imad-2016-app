@@ -2,10 +2,12 @@ var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
 var Pool=require('pg').Pool;
-var config{
+var config={
     user:'ash9876',
     database:'ash9876',
-    host
+    host:'db.imad.hasura-app.io',
+    port:'5432',
+    password:process.env.DB_PASSWORD
 }
 var app = express();
 app.use(morgan('combined'));
@@ -30,6 +32,14 @@ app.get('/wish.html', function (req, res) {
 
 app.get('/me.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'me.html'));
+});
+
+app.get('/signup.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
+});
+
+app.get('/login.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
