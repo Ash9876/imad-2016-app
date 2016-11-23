@@ -39,7 +39,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/my-db',function(req,res){
+app.post('/my-db',function(req,res){
     res.send("done");
 });
 
