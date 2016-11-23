@@ -23,6 +23,10 @@ app.get('/wish.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'wish.html'));
 });
 
+app.get('/me.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'me.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
