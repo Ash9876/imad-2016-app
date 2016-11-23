@@ -16,8 +16,8 @@ header {
 }
 
 #heading{
-    max-width: 1200px;
-    min-width: 1200px;
+    max-width: 1270px;
+    min-width: 1270px;
     overflow: hidden;
 }
 
@@ -62,13 +62,13 @@ nav{
     width: auto;
     font-size: 1.2rem;
     line-height:1.5;
-    float:center;
     background-color: beige;
     font-family: 'Helvetica';
     padding: 30px;
     padding-top: 15px;
     border: 3px solid #d0c8e0;
     align-self:center;
+    margin-top:30px;
 }
 
 #image{
