@@ -16,7 +16,7 @@ var pool = new Pool(config);
 app.get('/my-db',function(req,res){
     pool.query('SELECT * FROM user', function(req,res){
         
-            res.send(JSON.stringify(result));
+            res.send(done);
         
     });
 });
