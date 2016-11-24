@@ -51,7 +51,7 @@ nav{
     float: left;
     background-color: beige;
     font-family: 'Helvetica';
-    padding: 50px;
+    padding: 30px;
     margin-left: 120px;
     margin-top:30px;
     border: 3px solid #d0c8e0;
@@ -63,8 +63,7 @@ nav{
     line-height:1.5;
     background-color: beige;
     font-family: 'Helvetica';
-    padding: 30px;
-    padding-top: 15px;
+    padding: 50px;
     border: 3px solid #d0c8e0;
     align-self:center;
     color: #7b7396;
