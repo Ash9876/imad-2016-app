@@ -55,7 +55,13 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.post('/my-db',function(req,res){
-    res.send("done");
+    pool.query('SELECT * FROM user',function(req,res){
+        if(err){
+        res.status(5000).send(err.toString());
+        }else{
+            res.send(JSON.stringify(result));
+        }
+    });
 });
 
 
