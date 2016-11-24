@@ -17,6 +17,9 @@ var app = express();
 app.use(morgan('combined'));
 
 app.post('/my-db', function (req, res) {
+    var username=req.param('username');
+    var password=req.param('password');
+    res.send(username+' '+password);
   pool.query('SELECT * FROM user',function(err,result){
       if(err){
           res.status(500).send(err.toString());
