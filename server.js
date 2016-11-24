@@ -16,7 +16,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.post('/my-db', function (req, res) {
-  res.send(done);
+  res.send("done");
 });
 
 app.get('/', function (req, res) {
