@@ -23,12 +23,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.post('/my-db', function (req, res) {
     var username=req.body.username;
     var password=req.body.password;
-    res.send(username+' '+password);
+    
   pool.query('SELECT * FROM user',function(err,result){
       if(err){
           res.status(500).send(err.toString());
       } else{
-          res.send(JSON.stringify(result));
+          res.send(JSON.stringify(result)+' '+username+' '+password);
       }
   });
 });
