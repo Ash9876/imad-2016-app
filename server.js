@@ -54,7 +54,7 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.post('/my-db',function(req,res){
+app.get('/my-db',function(req,res){
     pool.query('SELECT * FROM user',function(req,res){
         if(err){
         res.status(500).send(err.toString());
