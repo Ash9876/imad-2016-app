@@ -59,7 +59,6 @@ var pool = new Pool(config);
 
 app.post('/my-db',function(req,res){
     res.send("done");
-    });
 });
 
 
