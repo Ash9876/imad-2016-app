@@ -14,6 +14,18 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
+var pool = new Pool(config);
+
+app.get('/my-db',function(req,res){
+    pool.query('SELECT * FROM user', function(req,res){
+        if(err){
+        res.send("error");
+        }else{
+            res.send(JSON.stringify(result));
+        }
+    });
+});
+
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
@@ -55,17 +67,6 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-var pool = new Pool(config);
-
-app.get('/my-db',function(req,res){
-    pool.query('SELECT * FROM user', function(req,res){
-        if(err){
-        res.send("error");
-        }else{
-            res.send(JSON.stringify(result));
-        }
-    });
-});
 
 
 var port = 8080; // Use 8080 for local development because you might already have apache running on 80
