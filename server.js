@@ -21,14 +21,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/person-db', function (req, res) {
-   // var username=req.body.username;
-   // var password=req.body.password;
+   var username=req.body.username;
+    var password=req.body.password;
     
-  pool.query("SELECT * FROM person WHERE username="+req.body.username,function(err,result){
+  pool.query("SELECT * FROM person WHERE username='ash'",function(err,result){
       if(err){
           res.status(500).send(err.toString());
       } else{
-          res.send(JSON.stringify(result.rows));
+          res.send(JSON.stringify(result.rows)+' '+username);
       }
   });
 });
