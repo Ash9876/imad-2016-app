@@ -11,12 +11,19 @@ var config={
     password:process.env.DB_PASSWORD
 };
 
+var pool=new Pool(config);
 
 var app = express();
 app.use(morgan('combined'));
 
-app.post('/my-db', function (req, res) {
-  res.send("done");
+app.get('/my-db', function (req, res) {
+  pool.query('SELECT * FROM user',function(err,result){
+      if(err){
+          res.status(500).send(err.toString());
+      } else{
+          res.send(JSON.stringify(result));
+      }
+  });
 });
 
 app.get('/', function (req, res) {
