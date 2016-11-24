@@ -15,7 +15,7 @@ var config={
 var app = express();
 app.use(morgan('combined'));
 
-app.post('/mydb', function (req, res) {
+app.post('/my-db', function (req, res) {
   res.send(done);
 });
 
