@@ -124,14 +124,14 @@ nav{
 
 .container{
     width: 1200px;
-    color: #7b7396;
+    color: #647c88;
 }
 
 footer{
     text-align:center;
     background-color:#38312a;
     color:#dcccea;
-    border-top:9px solid #6c6682;
+    border-top:9px solid #667282;
     font-family:'Arial','Helvetica','sans-serif';
     height: 80px;
     clear: both;
