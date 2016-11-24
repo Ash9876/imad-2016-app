@@ -24,7 +24,7 @@ app.post('/my-db', function (req, res) {
     var username=req.body.username;
     var password=req.body.password;
     
-  pool.query('SELECT * FROM user WHERE username=username',function(err,result){
+  pool.query('SELECT * FROM user WHERE username="wefwfagfr"',function(err,result){
       if(err){
           res.status(500).send(err.toString());
       } else{
