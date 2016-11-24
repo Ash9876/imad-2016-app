@@ -16,9 +16,13 @@ var pool=new Pool(config);
 var app = express();
 app.use(morgan('combined'));
 
+var bodyParser = require('body-parser');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 app.post('/my-db', function (req, res) {
-    var username=req.param('username');
-    var password=req.param('password');
+    var username=req.body.username;
+    var password=req.body.password;
     res.send(username+' '+password);
   pool.query('SELECT * FROM user',function(err,result){
       if(err){
