@@ -20,7 +20,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.post('/my-db', function (req, res) {
+app.post('/person-db', function (req, res) {
    // var username=req.body.username;
    // var password=req.body.password;
     
