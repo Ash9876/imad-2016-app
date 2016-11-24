@@ -51,8 +51,7 @@ nav{
     float: left;
     background-color: beige;
     font-family: 'Helvetica';
-    padding: 30px;
-    padding-top: 15px;
+    padding: 50px;
     margin-left: 120px;
     margin-top:30px;
     border: 3px solid #d0c8e0;
@@ -68,8 +67,8 @@ nav{
     padding-top: 15px;
     border: 3px solid #d0c8e0;
     align-self:center;
-    margin-top:30px;
     color: #7b7396;
+    margin:auto;
 }
 
 .input{
