@@ -60,7 +60,7 @@ var pool = new Pool(config);
 app.post('/my-db',function(req,res){
     pool.query('SELECT * FROM user', function(req,res){
         if(err){
-        res.status(500).send(err.toString());
+        res.send("error");
         }else{
             res.send(JSON.stringify(result));
         }
