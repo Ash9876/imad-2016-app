@@ -21,10 +21,10 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/my-db', function (req, res) {
-    var username=req.body.username;
-    var password=req.body.password;
+   // var username=req.body.username;
+   // var password=req.body.password;
     
-  pool.query('SELECT * FROM user WHERE username="wefwfagfr"',function(err,result){
+  pool.query('SELECT * FROM user WHERE username="ash"',function(err,result){
       if(err){
           res.status(500).send(err.toString());
       } else{
