@@ -14,23 +14,10 @@ function change(){
 setInterval(change,1000);
 
 var treat=document.getElementById('treat');
-        treat.onclick=function(){
-        var request=new XMLHttpRequest();
-        request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                var choice=request.responseText;
-                 var treatval=document.getElementById('treatval');
-                treatval.innerHTML=choice.toString();
-            }
-        }
+treat.onclick=function(){
+        var treatval=document.getElementById('treatval');
+        treatval.innerHTML=choice.toString();
     };
-    request.open('GET','http://ash9876.imad.hasura-app.io/counter',true);
-    request.send(null);
-   
-        };
 
 var button=document.getElementById('counter');
 button.onclick=function(){
