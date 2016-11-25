@@ -57,8 +57,8 @@ app.get('/signup.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'signup.html'));
 });
 
-app.get('/login.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.html'));
+app.get('/poem.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'poem.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
