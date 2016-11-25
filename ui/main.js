@@ -35,7 +35,7 @@ treat.onclick=function(){
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat
                 <br>`;
-                 template(input) ;
+                 var temp=template(input) ;
     };
     sheet.onclick=function(){
         
