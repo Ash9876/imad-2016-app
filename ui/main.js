@@ -37,10 +37,10 @@ var treat=document.getElementById('treat');
 var sheet=document.getElementById('sheet');
 var firstval=document.getElementById('firstval');
 treat.onclick=function(){
-        
-        firstval.innerHTML=` I walked across the street <br>
+        var poem=` I walked across the street <br>
                 So I could buy a treat
-                <br>`+template(inputs.input1);
+                <br>`;
+        firstval.innerHTML=poem+template(inputs.input1)+'fine';
                  
     };
     sheet.onclick=function(){
