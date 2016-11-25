@@ -14,14 +14,17 @@ function change(){
 
 setInterval(change,1000);
 
-var treat=document.getElementById('treat');
-var sheet=document.getElementById('sheet');
-var firstval=document.getElementById('firstval');
+
 
 var inputs={
     input1:{
     value1:'eat',
-    value2:'munch'
+    value2:'munch',
+    poem:` I walked across the street <br>
+                So I could buy a treat<br>
+                I walked into the store <br>
+            To buy something to 
+                <br>`
     },
     input2:{
         value1:'this',
@@ -32,24 +35,18 @@ var inputs={
 function template(data){
     var value2=data.value2;
     var value1=data.value1;
+    var poem=data.poem;
    var temp=`<input type='submit' class='submit' value=${value2} id=${value2}>
                     <input type='submit' class='submit' value=${value1} id=${value1}>`;
                     return temp;
 }
 
+var treat=document.getElementById('treat');
+var sheet=document.getElementById('sheet');
+var firstval=document.getElementById('firstval');
 
 treat.onclick=function(){
-        var poem=` I walked across the street <br>
-                So I could buy a treat<br>
-                I walked into the store <br>
-            To buy something to 
-                <br>`;
         firstval.innerHTML=poem+template(inputs.input1);
-        poem=poem+`I bought a piece of pastry<br>
-            the pastry tasted good<br>
-            and so I felt content<br>
-            but walked into a <br>`
-            ;
                  
     };
     sheet.onclick=function(){
