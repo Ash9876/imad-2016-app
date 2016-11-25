@@ -40,11 +40,11 @@ function template(data){
 
 treat.onclick=function(){
         var poem=` I walked across the street <br>
-                So I could buy a treat
+                So I could buy a treat<br>
                 I walked into the store <br>
             To buy something to 
                 <br>`;
-        firstval.innerHTML=poem+template(inputs.input1)+'fine';
+        firstval.innerHTML=poem+template(inputs.input1);
         poem=poem+`I bought a piece of pastry<br>
             the pastry tasted good<br>
             and so I felt content<br>
