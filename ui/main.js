@@ -21,10 +21,12 @@ treat.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat`;
+                treat.value='some';
     };
     sheet.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a sheet`;
+                sheet.value='yum';
     };
 
