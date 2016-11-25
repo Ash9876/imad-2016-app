@@ -14,9 +14,10 @@ function change(){
 setInterval(change,1000);
 
 var treat=document.getElementById('treat');
+var treatval=document.getElementById('treatval');
 treat.onclick=function(){
-        var treatval=document.getElementById('treatval');
-        treatval.innerHTML="treat";
+        
+        treatval.innerHTML='treat';
     };
 
 var button=document.getElementById('counter');
