@@ -15,8 +15,8 @@ function change(){
 setInterval(change,1000);
 
 function next(){
-   `<input type='submit' class='submit' value='yum' id='some'>
-                    <input type='submit' class='submit' value='some' id='yum'>`;
+   return(`<input type='submit' class='submit' value='yum' id='some'>
+                    <input type='submit' class='submit' value='some' id='yum'>`);
 }
 
 var treat=document.getElementById('treat');
@@ -27,7 +27,7 @@ treat.onclick=function(){
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat
                 <br>`;
-                 next()  ;
+                 next() ;
     };
     sheet.onclick=function(){
         
