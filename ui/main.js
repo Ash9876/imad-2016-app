@@ -14,12 +14,12 @@ function change(){
 
 setInterval(change,1000);
 
-//var treat=document.getElementById('treat');
-var element=document.getElementById('treatval');
-//treat.onclick=function(){
+var treat=document.getElementById('treat');
+var treatval=document.getElementById('treatval');
+treat.onclick=function(){
         
-        element.innerHTML='treat';
-    //};
+        treatval.innerHTML='treat';
+    };
 
 var button=document.getElementById('counter');
 button.onclick=function(){
