@@ -32,8 +32,16 @@
                 <br>
                 <input type='submit' class='submit' style='margin-left:35px;'>
                 </form>
-
+                <p id='formval'> </p>
+                <script>
+                    var form=document.getElementById('form');
+                    form.onsubmit=function(){
+                        var formval=document.getElementById('formval');
+                        formval.innerHTML="Hi"+form.username.value;
+                    };
+                </script>
             </div>
+            
         <footer style="margin-top:80px;">
             Ashwathi's webapp
         </footer>
