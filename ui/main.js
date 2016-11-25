@@ -34,6 +34,12 @@ button.onclick=function(){
    
 };
 
+var form=document.getElementById('form');
+        form.onsubmit=function(){
+        var formval=document.getElementById('formval');
+        formval.innerHTML="Hi"+form.username.value;
+        };
+
 var submit=document.getElementById("submitbtn");
 submit.onclick=function(){
     var request=new XMLHttpRequest();
