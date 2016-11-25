@@ -41,6 +41,10 @@ treat.onclick=function(){
                 So I could buy a treat
                 <br>`;
         firstval.innerHTML=poem+template(inputs.input1)+'fine';
+        poem=poem+`I walked across the street 
+So I could buy a treat<br>
+I walked into the store <br>
+To buy something to eat<br>`;
                  
     };
     sheet.onclick=function(){
