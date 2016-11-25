@@ -39,7 +39,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.post('/person-db', function (req, res) {
+app.get('/person-db', function (req, res) {
    var username=req.body.username;
     var password=req.body.password;
     
