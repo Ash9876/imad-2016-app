@@ -14,9 +14,15 @@ function change(){
 
 setInterval(change,1000);
 
-var input={
+var inputs={
+    input1:{
     value1:'some',
     value2:'um'
+    },
+    input2:{
+        value1:'this',
+        value2:'that'
+    }
 };
 
 function template(data){
@@ -34,7 +40,7 @@ treat.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat
-                <br>`+template(input);
+                <br>`+template(inputs.input1);
                  
     };
     sheet.onclick=function(){
