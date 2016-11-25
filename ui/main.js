@@ -15,55 +15,16 @@ function change(){
 setInterval(change,1000);
 
 var treat=document.getElementById('treat');
-var treatval=document.getElementById('treatval');
+var sheet=document.getElementById('sheet');
+var firstval=document.getElementById('firstval');
 treat.onclick=function(){
         
-        treatval.innerHTML='treat';
+        firstval.innerHTML=` I walked across the street <br>
+                So I could buy a treat`;
+    };
+    sheet.onclick=function(){
+        
+        firstval.innerHTML=` I walked across the street <br>
+                So I could buy a sheet`;
     };
 
-var button=document.getElementById('counter');
-button.onclick=function(){
-    var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                var counter=request.responseText;
-                 var span=document.getElementById('count');
-                span.innerHTML=counter.toString();
-            }
-        }
-    };
-    request.open('GET','http://ash9876.imad.hasura-app.io/counter',true);
-    request.send(null);
-   
-};
-
-
-
-var submit=document.getElementById("submitbtn");
-submit.onclick=function(){
-    var request=new XMLHttpRequest();
-    request.onreadystatechange=function(){
-        if(request.readyState===XMLHttpRequest.DONE)
-        {
-            if(request.status===200)
-            {
-                var names=request.responseText;
-                names=JSON.parse(names);
-                var list="";
-                for(var i=0;i<names.length;i++)
-                {
-                   list+='<li>'+names[i]+'</li>';
-                }
-            var ul=document.getElementById("namelist");
-            ul.innerHTML=list;
-            }
-        }
-    };
-    var nameinput=document.getElementById("name");
-    var name=nameinput.value;
-    request.open('GET','http://ash9876.imad.hasura-app.io/submit-name?name=' + name,true);
-    request.send(null);
-};
