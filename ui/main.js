@@ -32,7 +32,8 @@ var inputs={
     },
     input2:{
         value1:'this',
-        value2:'that'
+        value2:'that',
+        poem:`ok`
     }
 };
 
@@ -53,8 +54,8 @@ option1.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
     };
     
-sheet.onclick=function(){
-        firstval.innerHTML=template(inputs.input1);
+option2.onclick=function(){
+        firstval.innerHTML=template(inputs.input2);
     };
 
 
