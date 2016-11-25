@@ -14,9 +14,17 @@ function change(){
 
 setInterval(change,1000);
 
-function next(){
-   return(`<input type='submit' class='submit' value='yum' id='some'>
-                    <input type='submit' class='submit' value='some' id='yum'>`);
+var input={
+    value1:'some',
+    value2:'um'
+};
+
+function template(data){
+    var value2=data.value2;
+    var value1=data.value1;
+   var temp=`<input type='submit' class='submit' value=${value2} id=${value2}>
+                    <input type='submit' class='submit' value=${value1} id=${value1}>`;
+                    return temp;
 }
 
 var treat=document.getElementById('treat');
@@ -27,7 +35,7 @@ treat.onclick=function(){
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat
                 <br>`;
-                 next() ;
+                 template(input) ;
     };
     sheet.onclick=function(){
         
