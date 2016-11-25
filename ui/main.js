@@ -13,11 +13,11 @@ function change(){
 
 setInterval(change,1000);
 
-var treat=document.getElementById('treat');
-var treatval=document.getElementById('treatval');
+//var treat=document.getElementById('treat');
+var element=document.getElementById('treatval');
 //treat.onclick=function(){
         
-        treatval.innerHTML='treat';
+        element.innerHTML='treat';
     //};
 
 var button=document.getElementById('counter');
