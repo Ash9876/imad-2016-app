@@ -20,13 +20,18 @@ var firstval=document.getElementById('firstval');
 treat.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
-                So I could buy a treat`;
-                treat.value='some';
+                So I could buy a treat
+                <br>
+                    <input type='submit' class='submit' value='some' id='some'>
+                    <input type='submit' class='submit' value='yum' id='yum'>`;
     };
     sheet.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
-                So I could buy a sheet`;
-                sheet.value='yum';
+                So I could buy a sheet
+                <br>
+                    <input type='submit' class='submit' value='hey' id='hey'>
+                    <input type='submit' class='submit' value='yay' id='yay'>`;
+                
     };
 
