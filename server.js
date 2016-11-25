@@ -45,8 +45,8 @@ app.get('/more.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'more.html'));
 });
 
-app.get('/wish.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'wish.html'));
+app.get('/game.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'game.html'));
 });
 
 app.get('/me.html', function (req, res) {
