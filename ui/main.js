@@ -49,13 +49,9 @@ treat.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
                  
     };
-    sheet.onclick=function(){
+sheet.onclick=function(){
         
-        firstval.innerHTML=` I walked across the street <br>
-                So I could buy a sheet
-                <br>
-                    <input type='submit' class='submit' value='hey' id='hey'>
-                    <input type='submit' class='submit' value='yay' id='yay'>`;
+        firstval.innerHTML=template(inputs.input1);
                 
     };
 
