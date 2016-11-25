@@ -13,7 +13,11 @@ function change(){
 
 setInterval(change,1000);
 
-
+var treat=document.getElementById('treat');
+        treat.onclick=function(){
+        var treatval=document.getElementById('treatval');
+        treatval.innerHTML='treat';
+        };
 
 var button=document.getElementById('counter');
 button.onclick=function(){
@@ -34,11 +38,7 @@ button.onclick=function(){
    
 };
 
-var form=document.getElementById('form');
-        form.onsubmit=function(){
-        var formval=document.getElementById('formval');
-        formval.innerHTML="Hi"+form.username.value;
-        };
+
 
 var submit=document.getElementById("submitbtn");
 submit.onclick=function(){
