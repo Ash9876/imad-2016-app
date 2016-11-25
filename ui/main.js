@@ -48,7 +48,7 @@ treat.onclick=function(){
         poem=poem+`I bought a piece of pastry<br>
             the pastry tasted good<br>
             and so I felt content<br>
-            but walked into a <br>
+            but walked into a <br>`
             ;
                  
     };
