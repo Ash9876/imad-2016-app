@@ -36,7 +36,7 @@ function template(data){
     var value2=data.value2;
     var value1=data.value1;
     var poem=data.poem;
-   var temp=`<input type='submit' class='submit' value=${value2} id=${value2}>
+   var temp=`${poem}<br><br><input type='submit' class='submit' value=${value2} id=${value2}>
                     <input type='submit' class='submit' value=${value1} id=${value1}>`;
                     return temp;
 }
@@ -46,7 +46,7 @@ var sheet=document.getElementById('sheet');
 var firstval=document.getElementById('firstval');
 
 treat.onclick=function(){
-        firstval.innerHTML=poem+template(inputs.input1);
+        firstval.innerHTML=template(inputs.input1);
                  
     };
     sheet.onclick=function(){
