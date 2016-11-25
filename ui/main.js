@@ -17,6 +17,10 @@ setInterval(change,1000);
 
 
 var inputs={
+    input0:{
+      value1:'treat',
+      value2:'sheet'
+    },
     input1:{
     value1:'eat',
     value2:'munch',
@@ -41,7 +45,9 @@ function template(data){
                     return temp;
 }
 
-var treat=document.getElementById('treat');
+
+
+var option1=document.getElementById(input.input0.value1);
 var sheet=document.getElementById('sheet');
 var firstval=document.getElementById('firstval');
 
@@ -54,4 +60,5 @@ sheet.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
                 
     };
+
 
