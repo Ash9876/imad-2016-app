@@ -16,7 +16,7 @@ setInterval(change,1000);
 var treat=document.getElementById('treat');
 treat.onclick=function(){
         var treatval=document.getElementById('treatval');
-        treatval.innerHTML=choice.toString();
+        treatval.innerHTML="treat";
     };
 
 var button=document.getElementById('counter');
