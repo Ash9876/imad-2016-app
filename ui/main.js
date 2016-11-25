@@ -40,7 +40,7 @@ treat.onclick=function(){
         
         firstval.innerHTML=` I walked across the street <br>
                 So I could buy a treat
-                <br>`+template(inputs.input1);
+                <br>`+template(inputs.input1)+'what';
                  
     };
     sheet.onclick=function(){
