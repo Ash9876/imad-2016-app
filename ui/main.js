@@ -46,7 +46,7 @@ function template(data){
 }
 
 var option1=document.getElementById(inputs.input0.value1);
-var sheet=document.getElementById('sheet');
+var option2=document.getElementById(inputs.input0.value2);
 var firstval=document.getElementById('firstval');
 
 option1.onclick=function(){
