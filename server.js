@@ -20,7 +20,7 @@ var bodyParser = require('body-parser');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-
+var form = document.getElementById('form');
 
 app.post('/person-db', function (req, res) {
    var username=req.body.username;
