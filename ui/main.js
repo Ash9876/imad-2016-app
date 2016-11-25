@@ -51,7 +51,7 @@ var option1=document.getElementById(input.input0.value1);
 var sheet=document.getElementById('sheet');
 var firstval=document.getElementById('firstval');
 
-treat.onclick=function(){
+option1.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
                  
     };
