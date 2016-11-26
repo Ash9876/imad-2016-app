@@ -50,12 +50,12 @@ function template(data){
                     return temp;
 }
 
-var a=inputs;
+var first=inputs.input0.value1;
 var second=inputs.input0.value2;
 var next1=inputs.input1;
 var next2=inputs.input2;
 
-var option1=document.getElementById(a[0].value1);
+var option1=document.getElementById(first);
 var option2=document.getElementById(second);
 var firstval=document.getElementById('firstval');
 
