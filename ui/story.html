@@ -23,7 +23,7 @@
         </header>
             
             <div id="text2">
-                 <form onsubmit='numfunction()'>
+                 <form>
                 <p id='question1'>
                     
                    Type a number between 0 and 10</p><br>
@@ -34,12 +34,13 @@
                    Type a number between 0 and 10</p><br>
                   
                    <input type='text' class='input' id='number2'><br>
-                   <input type='sumbit' class='submit' value='Check'>
+                   <input type='sumbit' class='submit' value='Check' id='check'>
                    
                 </form>
             </div>
              <script>
-             function numfunction(){
+             var check=document.getElementById('check');
+             check.onclick=function numfunction(){
             var number1=document.getElementById('number1');
             var num1=10*Math.random();
             num1=Math.trunc(num1);
@@ -57,7 +58,7 @@
               question2.innerHTML='';
             }
             for(var i=0;i<1000000;i++);
-             }
+             };
             
         </script>
         <footer>
