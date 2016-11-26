@@ -60,11 +60,14 @@ var firstval=document.getElementById('firstval');
 
 option1.onclick=function(){
         firstval.innerHTML=template(next1);
-
+        first=inputs.input1.value1;
+        second=inputs.input1.value2;
     };
     
 option2.onclick=function(){
         firstval.innerHTML=template(next2);
+        first=inputs.input2.value1;
+        second=inputs.input2.value2;
     };
 
 
