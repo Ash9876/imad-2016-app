@@ -410,8 +410,6 @@ function last(data){
     return temp;
 }
 
-
-
 var option1=document.getElementById(inputs.input0.value1);
 var option2=document.getElementById(inputs.input0.value2);
 var firstval=document.getElementById('firstval');
@@ -546,3 +544,7 @@ option2.onclick=function(){
                 };
             };
     };
+    
+var num=10*Math.random();
+var number=getElementById('question');
+number.innerHTML=num;
