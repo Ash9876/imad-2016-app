@@ -24,25 +24,35 @@
             
             <div id="text2">
                  <form onsubmit="numfunction()">
-                <p id='question'>
+                <p id='question1'>
                     
                    Type a number between 0 and 10</p><br>
                   
-                   <input type="text" class="input" id="number">
+                   <input type="text" class="input" id="number1"><br>
+                   <p id='question2'>
+                    
+                   Type a number between 0 and 10</p><br>
+                  
+                   <input type="text" class="input" id="number2">
                    
                 </form>
             </div>
              <script>
              function numfunction(){
-                 var ans=document.getElementById('number');
-                var num1=10*Math.random();
-            var num=Math.trunc(num1);
-            var number=document.getElementById('question');
-            if (ans.value==num)
+            var number1=document.getElementById('number1');
+            var num1=10*Math.random();
+            num1=Math.trunc(num1);
+            var number2=document.getElementById('number2');
+            var num2=10*Math.random();
+            num2=Math.trunc(num2);
+            var question2=document.getElementById('question2');
+            if ((number1.value==num1)||((number1.value+number2.value)==(num1+num2)))
             {
-            number.innerHTML='you won';}
-            else{
-                number.innerHTML='you lose'+ans.value;
+              question1.innerHTML='you win<br>'+num1+','+(num1+num2); 
+              question2.innerHTML='';
+            }else{
+                question1.innerHTML='you lose<br>'+num1+','+(num1+num2); 
+              question2.innerHTML='';
             }
             for(var i=0;i<1000000;i++);
              }
