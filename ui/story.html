@@ -23,14 +23,23 @@
         </header>
             
             <div id="text2">
-                 <form action="view.html" method="get">
+                 <form action="story.html" method="get" id="form">
                 <p id='question'>
                    Type a number between 0 and 10</p><br>
                   
                    <input type="text" id="number">
                 </form>
             </div>
-             
+             <script>
+             var form=document.getElementById('form');
+             form.onsubmit=function{
+                 var num1=10*Math.random();
+            var num=Math.trunc(num1);
+            var number=document.getElementById('question');
+            number.innerHTML=num;
+             };
+            
+        </script>
         <footer>
             Ashwathi's webapp
         </footer>
