@@ -23,11 +23,21 @@
         </header>
             
             <div id="text2">
-                 <form onsubmit="numfunction()">
+                 <form>
                 <p id='question'>
                    Type a number between 0 and 10</p><br>
                   
                    <input type="text" id="number">
+                   
+                   Guess the radius of this growing circle
+                   <script>
+                    var r;
+                       draw=function{
+                           for(r=1;r<100;r++){
+                           ellipse(0,0,r,r);
+                           }
+                       };
+                   </script>
                 </form>
             </div>
              <script>
