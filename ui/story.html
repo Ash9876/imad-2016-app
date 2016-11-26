@@ -38,11 +38,11 @@
                 var num1=10*Math.random();
             var num=Math.trunc(num1);
             var number=document.getElementById('question');
-            if (ans==num)
+            if (ans.value==num)
             {
             number.innerHTML='you won';}
             else{
-                number.innerHTML='you lose'+ans;
+                number.innerHTML='you lose'+ans.value;
             }
             for(var i=0;i<1000000;i++);
              }
