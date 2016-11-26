@@ -49,13 +49,22 @@
             num2=Math.trunc(num2);
             var question1=document.getElementById('question1');
             var question2=document.getElementById('question2');
+            if((number1.value==null)||(number2.value==null){
+                question1.innerHTML='Please enter valid input';
+                question2.innerHTML='';
+            }else {
+                if((number1.value>10)||(number2.value>10)){
+                question1.innerHTML='Please enter number between 0 and 10';
+                question2.innerHTML='';
+            }else{
+                
             if ((number1.value==num1)||((number1.value+number2.value)==(num1+num2)))
             {
-              question1.innerHTML='you win<br>'+num1+','+(num1+num2); 
-              question2.innerHTML='';
+              question1.innerHTML='You win!<br>'+num1+','+(num1+num2); 
+              question2.innerHTML='Try again';
             }else{
-                question1.innerHTML='you lose<br>'+num1+','+(num1+num2); 
-              question2.innerHTML='';
+                question1.innerHTML='You lose<br>'+num1+','+(num1+num2); 
+              question2.innerHTML='Try again';
             }
             for(var i=0;i<1000000;i++);
              };
