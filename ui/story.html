@@ -27,17 +27,8 @@
                 <p id='question'>
                    Type a number between 0 and 10</p><br>
                   
-                   <input type="text" id="number">
+                   <input type="text" class="input" id="number">
                    
-                   Guess the radius of this growing circle
-                   <script>
-                    var r;
-                       draw=function{
-                           for(r=1;r<100;r++){
-                           ellipse(0,0,r,r);
-                           }
-                       };
-                   </script>
                 </form>
             </div>
              <script>
@@ -46,7 +37,7 @@
             var num=Math.trunc(num1);
             var number=document.getElementById('question');
             number.innerHTML=num;
-            
+            for(var i=0;i<1000000;i++);
              };
             
         </script>
