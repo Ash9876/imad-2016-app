@@ -58,18 +58,20 @@ function template(data){
 }
 
 
+var options={
+    o1:document.getElementById(inputs.input0.value1),
+    o2:document.getElementById(inputs.input0.value2)
+};
 
-var option1=document.getElementById(inputs.input0.value1);
-var option2=document.getElementById(inputs.input0.value2);
-var option5=document.getElementById(inputs.input2.value1);
 var option6=document.getElementById(inputs.input2.value2);
-var option7=document.getElementById(inputs.input3.value1);
-var option8=document.getElementById(inputs.input3.value2);
+  var  option7=document.getElementById(inputs.input3.value1);
+  var  option8=document.getElementById(inputs.input3.value2);
 var option9=document.getElementById(inputs.input4.value1);
 var option10=document.getElementById(inputs.input4.value2);
-var firstval=document.getElementById('firstval');
 
-option1.onclick=function(){
+
+var firstval=document.getElementById('firstval');
+options.o1.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
         var option3=document.getElementById(inputs.input1.value1);
         option3.onclick=function(){
@@ -79,9 +81,8 @@ option1.onclick=function(){
         option4.onclick=function(){
         firstval.innerHTML=template(inputs.input4);
         };
-        
     };
     
-option2.onclick=function(){
+options.o2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
     };
