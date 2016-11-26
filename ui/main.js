@@ -1,5 +1,3 @@
-
-
 var inputs={
     input0:{
       value1:'treat',
