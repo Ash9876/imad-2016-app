@@ -61,8 +61,6 @@ function template(data){
 
 var option1=document.getElementById(inputs.input0.value1);
 var option2=document.getElementById(inputs.input0.value2);
-var option3=document.getElementById(inputs.input1.value1);
-var option4=document.getElementById(inputs.input1.value2);
 var option5=document.getElementById(inputs.input2.value1);
 var option6=document.getElementById(inputs.input2.value2);
 var option7=document.getElementById(inputs.input3.value1);
@@ -78,7 +76,9 @@ option1.onclick=function(){
 option2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
     };
-    
+
+var option3=document.getElementById(inputs.input1.value1);
+var option4=document.getElementById(inputs.input1.value2);    
 option3.onclick=function(){
         firstval.innerHTML=template(inputs.input3);
     };
