@@ -34,12 +34,15 @@
             </div>
              <script>
              function numfunction(){
-                 var num1=10*Math.random();
+                 var ans=document.getElementById('number');
+                var num1=10*Math.random();
             var num=Math.trunc(num1);
             var number=document.getElementById('question');
-            number.innerHTML=num;
+            if (number==num)
+            {
+            number.innerHTML='you won';}
             for(var i=0;i<1000000;i++);
-             };
+             }
             
         </script>
         <footer>
