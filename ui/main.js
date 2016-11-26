@@ -69,8 +69,6 @@ var options={
     o8:document.getElementById(inputs.input3.value2),
     o9:document.getElementById(inputs.input4.value1),
     o10:document.getElementById(inputs.input4.value2),
-    o11:document.getElementById(inputs.input5.value1),
-    o12:document.getElementById(inputs.input5.value2)
 };
 
 
