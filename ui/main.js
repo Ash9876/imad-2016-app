@@ -234,8 +234,8 @@ var inputs={
             i got a bright sunny day<br>`
      },
      input15:{
-        value1:`black and white`,
-        value2:`fully white`,
+        value1:`black `,
+        value2:` white`,
         poem:`I walked across the street <br>
             so I could buy a sheet<br>
             of paper from the store<br>
@@ -245,7 +245,7 @@ var inputs={
             and then i thought oh yes<br>
             i would write about my cat<br>
             my cat cute but sly<br>
-            shes coloured <br>`
+            shes coloured fully <br>`
      },
      input16:{
         value1:'pounced',
