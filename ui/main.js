@@ -79,7 +79,7 @@ option2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
     };
     
-eat.onclick=function(){
+option3.onclick=function(){
         firstval.innerHTML=template(inputs.input3);
     };
 
