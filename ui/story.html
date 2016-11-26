@@ -23,7 +23,7 @@
         </header>
             
             <div id="text2">
-                 <form id="form">
+                 <form onsubmit="numfunction()">
                 <p id='question'>
                    Type a number between 0 and 10</p><br>
                   
@@ -31,8 +31,7 @@
                 </form>
             </div>
              <script>
-             var form=document.getElementById('form');
-             form.onsubmit=function(){
+             function numfunction(){
                  var num1=10*Math.random();
             var num=Math.trunc(num1);
             var number=document.getElementById('question');
