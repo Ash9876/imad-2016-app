@@ -45,6 +45,42 @@ var inputs={
             the pastry tasted good/bad<br>
             and so i felt content<br>
             but walked into a<br>`
+     },
+     input5:{
+        value1:'look',
+        value2:'shove',
+        poem:`I walked across the street <br>
+            so I could buy a treat<br>
+             I walked into the store <br>
+            To buy something to eat<br>
+            i bought a piece of pastry<br>
+            the pastry tasted good/bad<br>
+            and so i felt content<br>
+            but walked into a table<br>
+            ouch! that hurt i said<br>
+            and gave the table a <br>
+            `
+     },
+     input6:{
+        value1:null,
+        value2:null,
+        poem:`I walked across the street <br>
+            so I could buy a treat<br>
+             I walked into the store <br>
+            To buy something to eat<br>
+            i bought a piece of pastry<br>
+            the pastry tasted good/bad<br>
+            and so i felt content<br>
+            but walked into a<br>
+            ouch! that hurt i said<br>
+            and looked up fuming with rage<br>
+            he was large and scary<br><br><br> 
+            my rage replaced by fear<br><br>
+            'im sorry' the man said<b<br>
+            that kept my fear down<br>
+            because not spoke, he squeaked<br><br>
+            so before i burst into laughter<br>
+            I walked onto the street<br>`
      }
 };
 
@@ -55,6 +91,12 @@ function template(data){
     var temp=`${poem}<br><br><input type='submit' class='submit' value=${value1} id=${value1}>
                     <input type='submit' class='submit' value=${value2} id=${value2}>`;
                     return temp;
+}
+
+function last(data){
+    var poem=data.poem;
+    var temp=`Here's your complete poem<br><br>${poem}<br><br><a href='poem.html'>Play again</a>`
+    return temp;
 }
 
 
@@ -74,6 +116,15 @@ option1.onclick=function(){
         var option3=document.getElementById(inputs.input1.value1);
         option3.onclick=function(){
         firstval.innerHTML=template(inputs.input3);
+            var option5=document.getElementById(inputs.input3.value1);
+            option5.onclick=function(){
+            firstval.innerHTML=template(inputs.input5);
+            
+            };
+            var option6=document.getElementById(inputs.input3.value2);
+            option6.onclick=function(){
+            firstval.innerHTML=last(inputs.input6);
+            };
          };
         var option4=document.getElementById(inputs.input1.value2);
         option4.onclick=function(){
