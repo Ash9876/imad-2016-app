@@ -16,13 +16,13 @@ var pool=new Pool(config);
 var app = express();
 app.use(morgan('combined'));
 
-var bodyParser = require('body-parser');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+//var bodyParser = require('body-parser');
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/person-db', function (req, res) {
-   var username=req.body.username;
-    var password=req.body.password;
+  // var username=req.body.username;
+    //var password=req.body.password;
     
   pool.query("SELECT * FROM person" ,function(err,result){
       if(err){
