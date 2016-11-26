@@ -38,6 +38,7 @@ var inputs={
             of paper from the store<br>
             to write a little <br>`
     }
+    
 };
 
 function template(data){
@@ -62,6 +63,7 @@ option1.onclick=function(){
         firstval.innerHTML=template(next1);
         first=inputs.input1.value1;
         second=inputs.input1.value2;
+        next1=inputs.input3;
     };
     
 option2.onclick=function(){
