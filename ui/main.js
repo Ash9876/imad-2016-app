@@ -31,9 +31,12 @@ var inputs={
                 <br>`
     },
     input2:{
-        value1:'this',
-        value2:'that',
-        poem:`ok`
+        value1:'poem',
+        value2:'story',
+        poem:`I walked across the street 
+so I could buy a sheet
+of paper from the store
+to write a little <br>`
     }
 };
 
