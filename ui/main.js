@@ -71,14 +71,14 @@ var firstval=document.getElementById('firstval');
 
 option1.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
+        var option3=document.getElementById(inputs.input1.value1);
+        var option4=document.getElementById(inputs.input1.value2); 
     };
     
 option2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
     };
 
-var option3=document.getElementById(inputs.input1.value1);
-var option4=document.getElementById(inputs.input1.value2);    
 option3.onclick=function(){
         firstval.innerHTML=template(inputs.input3);
     };
