@@ -60,29 +60,40 @@ function template(data){
 
 var options={
     o1:document.getElementById(inputs.input0.value1),
-    o2:document.getElementById(inputs.input0.value2)
+    o2:document.getElementById(inputs.input0.value2),
+    o3:document.getElementById(inputs.input1.value1),
+    o4:document.getElementById(inputs.input1.value2),
+    o5:document.getElementById(inputs.input2.value1),
+    o6:document.getElementById(inputs.input2.value2),
+    o7:document.getElementById(inputs.input3.value1),
+    o8:document.getElementById(inputs.input3.value2),
+    o9:document.getElementById(inputs.input4.value1),
+    o10:document.getElementById(inputs.input4.value2),
+    o11:document.getElementById(inputs.input5.value1),
+    o12:document.getElementById(inputs.input5.value2)
 };
 
-var option6=document.getElementById(inputs.input2.value2);
-  var  option7=document.getElementById(inputs.input3.value1);
-  var  option8=document.getElementById(inputs.input3.value2);
-var option9=document.getElementById(inputs.input4.value1);
-var option10=document.getElementById(inputs.input4.value2);
 
 
 var firstval=document.getElementById('firstval');
 options.o1.onclick=function(){
         firstval.innerHTML=template(inputs.input1);
-        var option3=document.getElementById(inputs.input1.value1);
-        option3.onclick=function(){
+        
+        options.o3.onclick=function(){
         firstval.innerHTML=template(inputs.input3);
          };
-        var option4=document.getElementById(inputs.input1.value2);
-        option4.onclick=function(){
+        options.o4.onclick=function(){
         firstval.innerHTML=template(inputs.input4);
         };
     };
     
 options.o2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
+        
+        options.o5.onclick=function(){
+        firstval.innerHTML=template(inputs.input5);
+         };
+        options.o6.onclick=function(){
+        firstval.innerHTML=template(inputs.input6);
+        };
     };
