@@ -30,7 +30,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a<br>`
     },
@@ -42,7 +42,7 @@ var inputs={
              I walked into the store <br>
             To buy something to munch<br>
             i bought a piece of biscuit<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a<br>`
      },
@@ -54,7 +54,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a table<br>
             ouch! that hurt i said<br>
@@ -69,9 +69,9 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
-            but walked into a<br>
+            but walked into a man<br>
             ouch! that hurt i said<br>
             and looked up fuming with rage<br>
             he was large and scary<br>
@@ -79,7 +79,7 @@ var inputs={
             'im sorry' the man said<br>
             that kept my fear down<br>
             because not spoke, he squeaked<br>
-            so before i burst into laughter<br>
+            so, before i burst into laughter<br>
             I walked onto the street<br>`
      },
      input7:{
@@ -90,7 +90,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a table<br>
             ouch! that hurt i said<br>
@@ -108,7 +108,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a table<br>
             ouch! that hurt i said<br>
@@ -129,7 +129,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a table<br>
             ouch! that hurt i said<br>
@@ -156,7 +156,7 @@ var inputs={
              I walked into the store <br>
             To buy something to eat<br>
             i bought a piece of pastry<br>
-            the pastry tasted good/bad<br>
+            the pastry tasted good<br>
             and so i felt content<br>
             but walked into a table<br>
             ouch! that hurt i said<br>
@@ -188,7 +188,7 @@ function template(data){
 
 function last(data){
     var poem=data.poem;
-    var temp=`Here's your complete poem<br><br>${poem}<br><br><a href='poem.html'>Play again</a>`
+    var temp=`Here's your complete poem<br><br>${poem}<br><br><a href='poem.html'>Play again</a>`;
     return temp;
 }
 
@@ -241,8 +241,31 @@ option1.onclick=function(){
         var option4=document.getElementById(inputs.input1.value2);
         option4.onclick=function(){
         firstval.innerHTML=template(inputs.input4);
+        var option5=document.getElementById(inputs.input3.value1);
+            option5.onclick=function(){
+            firstval.innerHTML=template(inputs.input5);
+                var option7=document.getElementById(inputs.input5.value1);
+                option7.onclick=function(){
+                firstval.innerHTML=last(inputs.input7);
+            
+                };
+                var option8=document.getElementById(inputs.input5.value2);
+                option8.onclick=function(){
+                firstval.innerHTML=template(inputs.input8);
+                    var option9=document.getElementById(inputs.input8.value1);
+                    option9.onclick=function(){
+                    firstval.innerHTML=last(inputs.input9);
+            
+                    };
+                    var option10=document.getElementById(inputs.input8.value2);
+                    option10.onclick=function(){
+                    firstval.innerHTML=last(inputs.input10);
+                
+                    };
+                };
         };
     };
+};
     
 option2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
