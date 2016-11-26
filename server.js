@@ -58,6 +58,10 @@ app.get('/story.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'story.html'));
 });
 
+app.get('/view.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'view.html'));
+});
+
 app.get('/poem.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'poem.html'));
 });
