@@ -413,12 +413,6 @@ function last(data){
 }
 
 
-var option6=document.getElementById(inputs.input2.value2);
-  var  option7=document.getElementById(inputs.input3.value1);
-  var  option8=document.getElementById(inputs.input3.value2);
-var option9=document.getElementById(inputs.input4.value1);
-var option10=document.getElementById(inputs.input4.value2);
-
 
 var option1=document.getElementById(inputs.input0.value1);
 var option2=document.getElementById(inputs.input0.value2);
