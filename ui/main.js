@@ -33,10 +33,10 @@ var inputs={
     input2:{
         value1:'poem',
         value2:'story',
-        poem:`I walked across the street 
-so I could buy a sheet
-of paper from the store
-to write a little <br>`
+        poem:`I walked across the street <br>
+            so I could buy a sheet<br>
+            of paper from the store<br>
+            to write a little <br>`
     }
 };
 
@@ -49,17 +49,22 @@ function template(data){
                     return temp;
 }
 
+var first=inputs.input0.value1;
+var second=inputs.input0.value2;
+var next1=inputs.input1;
+var next2=inputs.input2;
 
-var option1=document.getElementById(inputs.input0.value1);
-var option2=document.getElementById(inputs.input0.value2);
+var option1=document.getElementById(first);
+var option2=document.getElementById(second);
 var firstval=document.getElementById('firstval');
 
 option1.onclick=function(){
-        firstval.innerHTML=template(inputs.input1);
+        firstval.innerHTML=template(next1);
+
     };
     
 option2.onclick=function(){
-        firstval.innerHTML=template(inputs.input2);
+        firstval.innerHTML=template(next2);
     };
 
 
