@@ -50,26 +50,17 @@ function template(data){
                     return temp;
 }
 
-var first=inputs.input0.value1;
-var second=inputs.input0.value2;
-var next1=inputs.input1;
-var next2=inputs.input2;
 
-var option1=document.getElementById(first);
-var option2=document.getElementById(second);
+var option1=document.getElementById(inputs.input0.value1);
+var option2=document.getElementById(inputs.input0.value2);
 var firstval=document.getElementById('firstval');
 
 option1.onclick=function(){
-        firstval.innerHTML=template(next1);
-        first=inputs.input1.value1;
-        second=inputs.input1.value2;
-        next1=inputs.input3;
+        firstval.innerHTML=template(inputs.input1);
     };
     
 option2.onclick=function(){
-        firstval.innerHTML=template(next2);
-        first=inputs.input2.value1;
-        second=inputs.input2.value2;
+        firstval.innerHTML=template(inputs.input2);
     };
 
 
