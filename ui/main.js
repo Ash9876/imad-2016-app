@@ -68,8 +68,8 @@ function template(data){
     var value2=data.value2;
     var value1=data.value1;
     var poem=data.poem;
-    var temp=`${poem}<br><br><input type='submit' class='submit' value=${value2} id=${value2}>
-                    <input type='submit' class='submit' value=${value1} id=${value1}>`;
+    var temp=`${poem}<br><br><input type='submit' class='submit' value=${value1} id=${value1}>
+                    <input type='submit' class='submit' value=${value2} id=${value2}>`;
                     return temp;
 }
 
