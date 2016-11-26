@@ -545,6 +545,3 @@ option2.onclick=function(){
             };
     };
     
-var num=10*Math.random();
-var number=getElementById('question');
-number.innerHTML=num;
