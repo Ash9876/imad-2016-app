@@ -90,10 +90,4 @@ options.o1.onclick=function(){
 options.o2.onclick=function(){
         firstval.innerHTML=template(inputs.input2);
         
-        options.o5.onclick=function(){
-        firstval.innerHTML=template(inputs.input5);
-         };
-        options.o6.onclick=function(){
-        firstval.innerHTML=template(inputs.input6);
-        };
     };
