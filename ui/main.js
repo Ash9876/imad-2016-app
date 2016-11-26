@@ -188,14 +188,14 @@ var inputs={
             i would write about my <br>`
      },
      input12:{
-        value1:'bright sunny day',
-        value2:'nice rainy day',
+        value1:' sunny ',
+        value2:'rainy ',
         poem:`I walked across the street <br>
             so I could buy a sheet<br>
             of paper from the store<br>
             to write a little story<br>
             about what i did <br>
-            on a`
+            on a day nice and`
      },
      input13:{
         value1:null,
