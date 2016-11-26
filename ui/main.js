@@ -520,6 +520,7 @@ option2.onclick=function(){
                     var option21=document.getElementById(inputs.input20.value1);
                     option21.onclick=function(){
                     firstval.innerHTML=last(inputs.input21);
+                    };
                     var option22=document.getElementById(inputs.input20.value2);
                     option22.onclick=function(){
                     firstval.innerHTML=last(inputs.input22);
@@ -527,7 +528,7 @@ option2.onclick=function(){
                 };
                 
                 };
-                };
+                
                 
             };
             var option12=document.getElementById(inputs.input2.value2);
